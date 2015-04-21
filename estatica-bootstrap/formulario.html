@@ -6,24 +6,46 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1> Preencha o formulário abaixo: </h1>
-	<form action="obrigado.html" method="get"> 
-		Nome: <input type="text" name="nome"> <br>
-		Número da Matrícula: <input type="text" name="matricula"> <br>
-		Selecione seu Período: 
-		<select> 
-			<option> Primeiro </option>
-			<option> Segundo </option>
-			<option> Terceiro </option>
-			<option> Quarto </option>
-			<option> Quinto </option>
-			<option> Sexto </option>
-			<option> Setimo </option>
-			<option> Oitavo </option>
-			<option> Nono </option>
-			<option> Decimo </option>
-		</select> <br>
-		
-		<button type="submit" class="btn"> Cadastrar </button>
-	</form>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header"> 
+				<a class="navbar-brand" href="index.html"> Inicial </a> 
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"> 
+						<a href="formulario.html"> Inscreva-se </a> 
+					</li>
+					<li> <a href="obrigado.html"> Creditos </a> </li>
+				</ul>
+			</div>	
+		</div>	 </nav>
+	<div class="container" style="padding-top: 50px; text-align: center; padding-left: 400px; padding-right: 400px">
+		<form action="obrigado.html" method="get" class="form-signin">
+			<h1 class="lead"> Preencha o formulário abaixo: </h1>
+			<div style="text-align: center"> 
+				<p> <input type="text" placeholder="Nome" class="form-control"> 
+				</p> <br>
+
+				<p> <input type="text" placeholder="Matrícula" class="form-control">
+				</p> <br>
+
+				<p> Período:
+					<select> 
+						<option> Primeiro </option>
+						<option> Segundo </option>
+						<option> Terceiro </option>
+						<option> Quarto </option>
+						<option> Quinto </option>
+						<option> Sexto </option>
+						<option> Setimo </option>
+						<option> Oitavo </option>
+						<option> Nono </option>
+						<option> Decimo </option>
+					</select> 
+				</p> <br>
+			</div>
+
+			<button type="submit" class="btn bta-lg btn-primary btn-block"> Cadastrar </button>
+		</form> </div>
 </body>
