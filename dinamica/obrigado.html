@@ -23,29 +23,14 @@
 	</nav>
 
 	<div class="container" style="padding-top: 50px; text-align: center; padding-left: 400px; padding-right: 400px;">
-		<h1 class="lead"> Para uma pesquisa, porfavor diga quais temas você gostaria de aprender </h1>
-		<input id="texto" type="text" placeholder="Tema" class="form-control">
+		<h1 class="lead"> Digite quais temas voce gostaria de aprender! </h1>
+		<input id="texto" type="text" placeholder="Tema" class="form-control"/>
 		<button id="adicionar" class="btn btn-small btn-primary btn-block"> Adicionar </button>
 	</div>
 	<div class="container" style="text-align: center">
-		<ul id="aprender">  </ul>
-		<ul id="aprendi">  </ul>
+		<table id="aprender">  </table>
+		<table id="aprendi">  </table>
 	</div>
 
-	<script type="text/javascript">
-		var increment = 0;
-		$(document).ready(function() {
-			$("#adicionar").click(function() {
-				increment++;
-				$("#aprender").append("<li id='item-" + increment + "'>" + $("#texto").val() 
-					+ "<button id='mover-" + increment + "' class='btn btn-small btn-info'> Mover </button>"
-					+ "<button id='remover-" + increment + "' class='btn btn-small btn-danger'> Remover </button>"
-					+ "</li>");
-			});
-
-			$("#remover").click(function() {
-				
-			});
-		});
-	</script>
+	<script src="logica.js" type="text/javascript"> </script>
 </body>
