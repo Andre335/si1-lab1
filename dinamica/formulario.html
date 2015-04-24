@@ -1,7 +1,8 @@
 <head>
 	<meta charset="UTF-8">
-	<title> Pagina de Inscricao </title>
+	<title> Página de Inscricao </title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="style.css" rel="stylesheet" type="text">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
@@ -16,12 +17,12 @@
 					<li class="active"> 
 						<a href="formulario.html"> Inscreva-se </a> 
 					</li>
-					<li> <a href="obrigado.html"> Temas </a> </li>
+					<li> <a href="temas.html"> Temas </a> </li>
 				</ul>
 			</div>	
 		</div>	 </nav>
-	<div class="container" style="padding-top: 50px; text-align: center; padding-left: 400px; padding-right: 400px">
-		<form action="obrigado.html" method="get" class="form-signin">
+	<div id="content" class="container">
+		<form action="temas.html" method="get" class="form-signin">
 			<h1 class="lead"> Preencha o formulário abaixo: </h1>
 			<div style="text-align: center"> 
 				<p> <input type="text" placeholder="Nome" class="form-control" required> 
@@ -47,5 +48,9 @@
 			</div>
 
 			<button type="submit" class="btn btn-small btn-primary btn-block"> Cadastrar </button>
-		</form> </div>
+		</form> 
+	</div>
+	<div class="site-footer">
+		<p> © 2015  André Gonçalves, UFCG </p>
+	</div>
 </body>
