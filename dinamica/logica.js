@@ -11,13 +11,13 @@ $(document).ready(function() {
 	});
 
 	$("#aprender").on("click", "button[name='remover']", function() {
-		var td = this.parent();
+		var td = $(this).parent();
 		var linha = td.parent();
 		linha.remove();
 	});
 
 	$("#aprender").on("click", "button[name='aprendi']", function() {
-		var td = this.parent();
+		var td = $(this).parent();
 		var linha = td.parent();
 
 		$("#aprendi").append("<tr>" 
