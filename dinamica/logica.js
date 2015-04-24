@@ -4,10 +4,15 @@ $(document).ready(function() {
 	var buttonRemover = "<td> <button name='remover' class='btn btn-small btn-danger'> Remover </button> </td>";
 
 	$("#adicionar").click(function() {
+    
+    if ($("#texto").val().trim() != ""){
+        $("#aprender").append("<tr>" + "<td class='texto'>" + "<tema>" + $("#texto").val() + "</tema>" + "</td>"
+  		  + buttonAprendi + buttonRemover	
+			  + "</tr>");	
+    } else {
+        alert("Preencha os campos!");
+    }
 
-		$("#aprender").append("<tr>" + "<td class='texto'>" + "<tema>" + $("#texto").val() + "</tema>" + "</td>"
-			+ buttonAprendi + buttonRemover	
-			+ "</tr>");	
 	});
 
 	$("#aprender").on("click", "button[name='remover']", function() {

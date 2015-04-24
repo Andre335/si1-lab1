@@ -16,20 +16,26 @@
 					<li class="active"> 
 						<a href="formulario.html"> Inscreva-se </a> 
 					</li>
-					<li> <a href="obrigado.html"> Créditos </a> </li>
+					<li> <a href="obrigado.html"> Temas </a> </li>
 				</ul>
 			</div>	
 		</div>	
 	</nav>
 
-	<div class="container" style="padding-top: 50px; text-align: center; padding-left: 400px; padding-right: 400px;">
-		<h1 class="lead"> Digite quais temas voce gostaria de aprender! </h1>
-		<input id="texto" type="text" placeholder="Tema" class="form-control"/>
-		<button id="adicionar" class="btn btn-small btn-primary btn-block"> Adicionar </button>
+	<div id="form" class="container" style="padding-top: 50px; text-align: center; padding-left: 400px; padding-right: 400px;">
+      <h1 class="lead"> Digite quais temas você gostaria de aprender! </h1>
+  		<input id="texto" type="text" placeholder="Tema" class="form-control"/>
+  		<button id="adicionar" class="btn btn-small btn-primary btn-block"> Adicionar </button>
 	</div>
 	<div class="container" style="text-align: center">
-		<table id="aprender">  </table>
-		<table id="aprendi">  </table>
+    <div>
+      <h1 class="lead" style="text-align: left"> Assuntos a Aprender: </h1>
+		  <table id="aprender" class="table">  </table>
+    </div>
+    <div>
+      <h1 class="lead" style="text-align: left"> Assuntos Aprendidos: </h1>
+		  <table id="aprendi" class="table">  </table>
+    </div>
 	</div>
 
 	<script src="logica.js" type="text/javascript"> </script>
