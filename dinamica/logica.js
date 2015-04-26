@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var increment = 0;
-	var buttonAprendi = "<td> <button name='aprendi' class='btn btn-small btn-info'> Aprendi </button> </td>";
-	var buttonRemover = "<td> <button name='remover' class='btn btn-small btn-danger'> Remover </button> </td>";
+	var buttonAprendi = "<td> <button name='aprendi' class='btn btn-small btn-info'> Aprendi <span class='glyphicon glyphicon-book'> </span> </button> </td>";
+	var buttonRemover = "<td> <button name='remover' class='btn btn-small btn-danger'> Remover <span class='glyphicon glyphicon-remove' aria-hidden='true'> </span> </button> </td>";
 
 	$("#adicionar").click(function() {
     
