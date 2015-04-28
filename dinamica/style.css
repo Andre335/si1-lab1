@@ -1,11 +1,5 @@
-div#content {
-	padding-top: 50px; 
-	text-align: center; 
-}
-
-div#main {
-	padding-top: 50px; 
-	text-align: center;
+div#content, #main {
+	padding-top: 50px;  
 }
 
 div {
@@ -14,4 +8,9 @@ div {
 
 h2 {
 	text-align: left;
+}
+
+div#icon-user {
+	text-align: left;
+	padding-bottom: 5px;
 }
